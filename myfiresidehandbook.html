@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Fireside — Onboarding Comics</title>
 <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:wght@400;600;700;900&family=Oswald:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="assets/fsg.png">
 <style>
   :root {
     --blue-deep: #0a1628;
@@ -527,7 +528,7 @@
   .grad-warehouse { background: linear-gradient(145deg, #1e3a5f 0%, #0f2744 60%, #1a3a6e 100%); }
   .grad-drivers   { background: linear-gradient(145deg, #1a3a2e 0%, #0d2419 60%, #1f4a38 100%); }
   .grad-noc       { background: linear-gradient(145deg, #2d1a4f 0%, #1a0d30 60%, #3a1f5e 100%); }
-  .grad-splicing  { background: linear-gradient(145deg, #4f2d1a 0%, #301a0d 60%, #5e3a1f 100%); }
+  .grad-fibreteam  { background: linear-gradient(145deg, #4f2d1a 0%, #301a0d 60%, #5e3a1f 100%); }
   .grad-field     { background: linear-gradient(145deg, #1a4f3a 0%, #0d3022 60%, #1f5e46 100%); }
   .grad-admin     { background: linear-gradient(145deg, #1a3a4f 0%, #0d2230 60%, #1f4a5e 100%); }
   .grad-safety    { background: linear-gradient(145deg, #4f1a1a 0%, #300d0d 60%, #5e1f1f 100%); }
@@ -779,8 +780,8 @@
   <h1>Learn Your Role,<br><span>One Panel</span> At A Time</h1>
   <p class="hero-sub">Welcome to Fireside! Explore your department's comic book guides — fun, visual, and everything you need to hit the ground running in ICT fibre operations.</p>
   <div class="hero-stats">
-    <div class="stat"><div class="stat-number">8</div><div class="stat-label">Departments</div></div>
-    <div class="stat"><div class="stat-number">40+</div><div class="stat-label">Comic Guides</div></div>
+    <div class="stat"><div class="stat-number">14</div><div class="stat-label">Departments</div></div>
+    <div class="stat"><div class="stat-number">10+</div><div class="stat-label">Comic Guides</div></div>
     <div class="stat"><div class="stat-number">100%</div><div class="stat-label">Free Access</div></div>
   </div>
 </section>
@@ -799,38 +800,70 @@
 
 <div class="dept-tabs-wrapper">
   <div class="dept-tabs">
-    <button class="tab-btn active" onclick="switchTab('warehouse', this)">
-      <span class="tab-icon">📦</span>Warehouse<div class="tab-count">6</div>
-    </button>
+  
+    <button class="tab-btn active" onclick="switchTab('myhr', this)">
+      <span class="tab-icon">👥</span>HR & People<div class="tab-count">1</div>
+    </button>	
+    <button class="tab-btn" onclick="switchTab('warehouse', this)">
+      <span class="tab-icon">📦</span>Warehouse<div class="tab-count">1</div>
+    </button>	
     <button class="tab-btn" onclick="switchTab('drivers', this)">
-      <span class="tab-icon">🚚</span>Drivers<div class="tab-count">5</div>
+      <span class="tab-icon">🚚</span>Logistics<div class="tab-count">1</div>
     </button>
     <button class="tab-btn" onclick="switchTab('noc', this)">
-      <span class="tab-icon">🖥️</span>NOC Team<div class="tab-count">6</div>
+      <span class="tab-icon">🖥️</span>NOC Team<div class="tab-count">2</div>
     </button>
-    <button class="tab-btn" onclick="switchTab('splicing', this)">
-      <span class="tab-icon">🔧</span>Splicing<div class="tab-count">5</div>
+    <button class="tab-btn" onclick="switchTab('fibreteam', this)">
+      <span class="tab-icon">🖧</span>Fibre Teams<div class="tab-count">1</div>
     </button>
     <button class="tab-btn" onclick="switchTab('field', this)">
-      <span class="tab-icon">🏗️</span>Field Ops<div class="tab-count">5</div>
+      <span class="tab-icon">🏗️</span>Field Ops<div class="tab-count">1</div>
     </button>
-    <button class="tab-btn" onclick="switchTab('admin', this)">
-      <span class="tab-icon">📋</span>Admin<div class="tab-count">5</div>
+    <button class="tab-btn" onclick="switchTab('planning', this)">
+      <span class="tab-icon">📅</span>Planning<div class="tab-count">1</div>
     </button>
     <button class="tab-btn" onclick="switchTab('safety', this)">
-      <span class="tab-icon">⛑️</span>Safety<div class="tab-count">4</div>
+      <span class="tab-icon">⛑️</span>Safety<div class="tab-count">1</div>
     </button>
-    <button class="tab-btn" onclick="switchTab('hr', this)">
-      <span class="tab-icon">👥</span>HR & People<div class="tab-count">4</div>
+    <button class="tab-btn" onclick="switchTab('it', this)">
+      <span class="tab-icon">🛠️</span>IT &amp; Tools<div class="tab-count">1</div>
     </button>
+    <button class="tab-btn" onclick="switchTab('support', this)">
+      <span class="tab-icon">👨🏻‍💼</span>Support Staff<div class="tab-count">1</div>
+    </button>
+    <button class="tab-btn" onclick="switchTab('admin', this)">
+      <span class="tab-icon">🛡️</span>Admin<div class="tab-count">1</div>
+    </button>
+    <button class="tab-btn" onclick="switchTab('finance', this)">
+      <span class="tab-icon">💵</span>Finance<div class="tab-count">1</div>
+    </button>
+    <button class="tab-btn" onclick="switchTab('businessdevelopment', this)">
+      <span class="tab-icon">🖊</span>Business Dev<div class="tab-count">1</div>
+    </button>
+    <button class="tab-btn" onclick="switchTab('operations', this)">
+      <span class="tab-icon">📊</span>Operations<div class="tab-count">1</div>
+    </button>
+	
+	
+	
   </div>
 </div>
 
 <!-- COMICS SECTION -->
 <div class="comics-section">
 
+  <!-- HR -->
+  <div class="dept-panel active" id="panel-myhr">
+    <div class="dept-title-bar">
+      <span class="dept-title-icon">👥</span>
+      <h3>HR &amp; <span class="dept-color">People</span></h3>
+      <span class="dept-desc">Policies, benefits & company culture</span>
+    </div>
+    <div class="comics-grid" id="grid-myhr"></div>
+  </div>
+
   <!-- WAREHOUSE -->
-  <div class="dept-panel active" id="panel-warehouse">
+  <div class="dept-panel" id="panel-warehouse">
     <div class="dept-title-bar">
       <span class="dept-title-icon">📦</span>
       <h3>Warehouse <span class="dept-color">Operations</span></h3>
@@ -841,7 +874,7 @@
     </div>
   </div>
 
-  <!-- DRIVERS -->
+  <!-- LOGISTICS -->
   <div class="dept-panel" id="panel-drivers">
     <div class="dept-title-bar">
       <span class="dept-title-icon">🚚</span>
@@ -861,14 +894,14 @@
     <div class="comics-grid" id="grid-noc"></div>
   </div>
 
-  <!-- SPLICING -->
-  <div class="dept-panel" id="panel-splicing">
+  <!-- FIBRE TEAMS -->
+  <div class="dept-panel" id="panel-fibreteam">
     <div class="dept-title-bar">
-      <span class="dept-title-icon">🔧</span>
-      <h3>Fibre <span class="dept-color">Splicing</span></h3>
+      <span class="dept-title-icon">🖧</span>
+      <h3>Fibre <span class="dept-color">Teams</span></h3>
       <span class="dept-desc">Fusion splicing, testing & cable management</span>
     </div>
-    <div class="comics-grid" id="grid-splicing"></div>
+    <div class="comics-grid" id="grid-fibreteam"></div>
   </div>
 
   <!-- FIELD OPS -->
@@ -880,18 +913,20 @@
     </div>
     <div class="comics-grid" id="grid-field"></div>
   </div>
-
-  <!-- ADMIN -->
-  <div class="dept-panel" id="panel-admin">
+  
+  
+  <!-- PLANNING -->
+  <div class="dept-panel" id="panel-planning">
     <div class="dept-title-bar">
-      <span class="dept-title-icon">📋</span>
-      <h3>Admin & <span class="dept-color">Support</span></h3>
-      <span class="dept-desc">Scheduling, ticketing & internal systems</span>
+      <span class="dept-title-icon">📅</span>
+      <h3>Planning &amp; <span class="dept-color">Design</span></h3>
+      <span class="dept-desc">Acurate Route, ground review & design</span>
     </div>
-    <div class="comics-grid" id="grid-admin"></div>
+    <div class="comics-grid" id="grid-planning"></div>
   </div>
-
-  <!-- SAFETY -->
+  
+  
+    <!-- SAFETY -->
   <div class="dept-panel" id="panel-safety">
     <div class="dept-title-bar">
       <span class="dept-title-icon">⛑️</span>
@@ -900,17 +935,74 @@
     </div>
     <div class="comics-grid" id="grid-safety"></div>
   </div>
-
-  <!-- HR -->
-  <div class="dept-panel" id="panel-hr">
+    
+  
+  <!-- IT -->
+  <div class="dept-panel" id="panel-it">
     <div class="dept-title-bar">
-      <span class="dept-title-icon">👥</span>
-      <h3>HR &amp; <span class="dept-color">People</span></h3>
-      <span class="dept-desc">Policies, benefits & company culture</span>
+      <span class="dept-title-icon">🛠️</span>
+      <h3>IT &amp; <span class="dept-color">Tools</span></h3>
+      <span class="dept-desc">Softwares, hardwares & equipments</span>
     </div>
-    <div class="comics-grid" id="grid-hr"></div>
+    <div class="comics-grid" id="grid-it"></div>
+  </div>
+  
+  
+  <!-- SUPPORT STAFF -->
+  <div class="dept-panel" id="panel-support">
+    <div class="dept-title-bar">
+      <span class="dept-title-icon">👨🏻‍💼</span>
+      <h3>Support <span class="dept-color">Staff</span></h3>
+      <span class="dept-desc">Cooks, cleaners & security</span>
+    </div>
+    <div class="comics-grid" id="grid-supportstuff"></div>
+  </div>
+  
+
+  <!-- ADMIN -->
+  <div class="dept-panel" id="panel-admin">
+    <div class="dept-title-bar">
+      <span class="dept-title-icon">🛡️</span>
+      <h3>Admin &amp; <span class="dept-color">Support</span></h3>
+      <span class="dept-desc">Scheduling, ticketing & internal systems</span>
+    </div>
+    <div class="comics-grid" id="grid-admin"></div>
   </div>
 
+
+  <!-- FINANCE -->
+  <div class="dept-panel" id="panel-finance">
+    <div class="dept-title-bar">
+      <span class="dept-title-icon">💵</span>
+      <h3>HR &amp; <span class="dept-color">People</span></h3>
+      <span class="dept-desc">finance health, payroll & accounts</span>
+    </div>
+    <div class="comics-grid" id="grid-finance"></div>
+  </div>
+  
+  
+  <!-- BUSINESS DEVELOPMENT -->
+  <div class="dept-panel" id="panel-businessdevelopment">
+    <div class="dept-title-bar">
+      <span class="dept-title-icon">🖊</span>
+      <h3>Business <span class="dept-color">Development</span></h3>
+      <span class="dept-desc">Clients, strategies & marketing</span>
+    </div>
+    <div class="comics-grid" id="grid-businessdevelopment"></div>
+  </div>
+
+
+  <!-- OPERATIONS -->
+  <div class="dept-panel" id="panel-operations">
+    <div class="dept-title-bar">
+      <span class="dept-title-icon">📊</span>
+      <h3>HR &amp; <span class="dept-color">People</span></h3>
+      <span class="dept-desc">Workflows, strategies & efficiency</span>
+    </div>
+    <div class="comics-grid" id="grid-operations"></div>
+  </div>
+  
+  
 </div>
 
 <!-- READER MODAL -->
@@ -946,43 +1038,39 @@
 <script>
 // ── DATA ──────────────────────────────────────────────────────────────────
 const departments = {
+
+  myhr: {
+    grad: 'grad-hr',
+    icon: '👥',
+    comics: [
+      { title: 'Welcome to Fireside', sub: 'Our Culture & Values', icon: 'assets/humanresource1.png', badge: 'START HERE', isNew: true, file: 'assets/humanresource1.pdf', pages: 22 },
+    ]
+  },
+  
   warehouse: {
     grad: 'grad-warehouse',
     icon: '📦',
     comics: [
       { title: 'Welcome to the Warehouse', sub: 'Your First Day', icon: 'assets/warehouse1.png', badge: 'START HERE', isNew: true, file: 'assets/warehouse1.pdf', pages: 21 },
-      { title: 'Stock Control Basics', sub: 'Inventory 101', icon: '📊', badge: null, isNew: false, file: 'warehouse-stock.pdf', pages: 10 },
-      { title: 'Cable Drum Handling', sub: 'Safety First', icon: '🔄', badge: null, isNew: false, file: 'warehouse-drums.pdf', pages: 8 },
-      { title: 'Equipment Sign-Out', sub: 'Tools & Gear', icon: '🔑', badge: null, isNew: true, file: 'warehouse-signout.pdf', pages: 9 },
-      { title: 'Hazardous Storage', sub: 'Chemical Safety', icon: '⚠️', badge: null, isNew: false, file: 'warehouse-hazmat.pdf', pages: 7 },
-      { title: 'Loading & Dispatch', sub: 'Getting It Out the Door', icon: '🚪', badge: null, isNew: false, file: 'warehouse-dispatch.pdf', pages: 11 },
     ]
   },
   drivers: {
     grad: 'grad-drivers',
     icon: '🚚',
     comics: [
-      { title: 'Know Your Vehicle', sub: 'Fleet Orientation', icon: '🚛', badge: 'START HERE', isNew: false, file: 'drivers-vehicle.pdf', pages: 10 },
-      { title: 'Route Planning 101', sub: 'Getting There Safely', icon: '🗺️', badge: null, isNew: false, file: 'drivers-routes.pdf', pages: 8 },
-      { title: 'Load & Secure', sub: 'Cargo Best Practices', icon: '📦', badge: null, isNew: false, file: 'drivers-cargo.pdf', pages: 9 },
-      { title: 'Incident Reporting', sub: 'When Things Go Wrong', icon: '📝', badge: null, isNew: true, file: 'drivers-incidents.pdf', pages: 7 },
-      { title: 'Driver Code of Conduct', sub: 'On the Road Rules', icon: '🛣️', badge: null, isNew: false, file: 'drivers-conduct.pdf', pages: 8 },
+	  { title: 'Driver Code of Conduct', sub: 'On the Road Rules', icon: 'assets/drivers1.png', badge: null, isNew: true, file: 'assets/driversedition1.pdf', pages: 11 },
     ]
   },
   noc: {
     grad: 'grad-noc',
     icon: '🖥️',
     comics: [
-      { title: 'NOC Overview', sub: 'What We Watch & Why', icon: '📡', badge: 'START HERE', isNew: false, file: 'noc-overview.pdf', pages: 14 },
-      { title: 'Alarm Triage', sub: 'P1 to P4 Priorities', icon: '🚨', badge: null, isNew: false, file: 'noc-alarms.pdf', pages: 10 },
-      { title: 'Network Monitoring Tools', sub: 'Your Digital Cockpit', icon: '🖥️', badge: null, isNew: false, file: 'noc-tools.pdf', pages: 12 },
-      { title: 'Escalation Procedures', sub: 'Who to Call & When', icon: '📞', badge: null, isNew: false, file: 'noc-escalation.pdf', pages: 8 },
-      { title: 'Fibre Outage Playbook', sub: 'Rapid Response Guide', icon: '⚡', badge: null, isNew: true, file: 'noc-outage.pdf', pages: 11 },
-      { title: 'Shift Handover', sub: 'Smooth Transitions', icon: '🔄', badge: null, isNew: false, file: 'noc-handover.pdf', pages: 7 },
+      { title: 'NOC Overview', sub: 'What We Watch & Why', icon: 'assets/noc1.png', badge: 'START HERE', isNew: false, file: 'assets/networkoperationscenter1.pdf', pages: 21 },
+      { title: 'Fibre Outage Playbook', sub: 'Rapid Response Guide', icon: 'assets/noc2.png', badge: null, isNew: true, file: 'assets/networkoperationscenter2.pdf', pages: 16 },
     ]
   },
-  splicing: {
-    grad: 'grad-splicing',
+  fibreteam: {
+    grad: 'grad-fibreteam',
     icon: '🔧',
     comics: [
       { title: 'Fibre Basics', sub: 'What You\'re Working With', icon: '💡', badge: 'START HERE', isNew: false, file: 'splice-basics.pdf', pages: 13 },
@@ -1003,6 +1091,37 @@ const departments = {
       { title: 'Site Sign-Off', sub: 'Quality & Completion', icon: '✅', badge: null, isNew: false, file: 'field-signoff.pdf', pages: 7 },
     ]
   },
+   planning: {
+    grad: 'grad-hr',
+    icon: '👥',
+    comics: [
+      { title: 'Welcome to Planning', sub: 'Our Culture & Values', icon: '🔥', badge: 'START HERE', isNew: false, file: 'hr-welcome.pdf', pages: 12 },
+    ]
+  },
+    safety: {
+    grad: 'grad-safety',
+    icon: '⛑️',
+    comics: [
+      { title: 'PPE Every Day', sub: 'Gear Up, Stay Safe', icon: '🦺', badge: 'REQUIRED', isNew: false, file: 'safety-ppe.pdf', pages: 8 },
+      { title: 'Electrical Hazards', sub: 'Working Near Live Lines', icon: '⚡', badge: 'REQUIRED', isNew: false, file: 'safety-electrical.pdf', pages: 9 },
+      { title: 'Working at Heights', sub: 'Poles, Rooftops & Ladders', icon: '🪜', badge: null, isNew: false, file: 'safety-heights.pdf', pages: 10 },
+      { title: 'Emergency Procedures', sub: 'When the Worst Happens', icon: '🚑', badge: null, isNew: true, file: 'safety-emergency.pdf', pages: 7 },
+    ]
+  },
+  it: {
+    grad: 'grad-hr',
+    icon: '👥',
+    comics: [
+      { title: 'Welcome to IT and Tools', sub: 'Our Culture & Values', icon: '🔥', badge: 'START HERE', isNew: false, file: 'hr-welcome.pdf', pages: 12 },
+    ]
+  },
+  supportstuff: {
+    grad: 'grad-hr',
+    icon: '👥',
+    comics: [
+      { title: 'Welcome to Support Staff', sub: 'Our Culture & Values', icon: '🔥', badge: 'START HERE', isNew: false, file: 'hr-welcome.pdf', pages: 12 },
+    ]
+  },
   admin: {
     grad: 'grad-admin',
     icon: '📋',
@@ -1014,26 +1133,29 @@ const departments = {
       { title: 'Customer Communication', sub: 'Saying the Right Thing', icon: '📧', badge: null, isNew: true, file: 'admin-comms.pdf', pages: 8 },
     ]
   },
-  safety: {
-    grad: 'grad-safety',
-    icon: '⛑️',
-    comics: [
-      { title: 'PPE Every Day', sub: 'Gear Up, Stay Safe', icon: '🦺', badge: 'REQUIRED', isNew: false, file: 'safety-ppe.pdf', pages: 8 },
-      { title: 'Electrical Hazards', sub: 'Working Near Live Lines', icon: '⚡', badge: 'REQUIRED', isNew: false, file: 'safety-electrical.pdf', pages: 9 },
-      { title: 'Working at Heights', sub: 'Poles, Rooftops & Ladders', icon: '🪜', badge: null, isNew: false, file: 'safety-heights.pdf', pages: 10 },
-      { title: 'Emergency Procedures', sub: 'When the Worst Happens', icon: '🚑', badge: null, isNew: true, file: 'safety-emergency.pdf', pages: 7 },
-    ]
-  },
-  hr: {
+  finance: {
     grad: 'grad-hr',
     icon: '👥',
     comics: [
-      { title: 'Welcome to Fireside', sub: 'Our Culture & Values', icon: '🔥', badge: 'START HERE', isNew: false, file: 'hr-welcome.pdf', pages: 12 },
-      { title: 'Leave & Benefits', sub: 'What You\'re Entitled To', icon: '🎁', badge: null, isNew: false, file: 'hr-benefits.pdf', pages: 9 },
-      { title: 'Code of Conduct', sub: 'How We Treat Each Other', icon: '🤝', badge: null, isNew: false, file: 'hr-conduct.pdf', pages: 8 },
-      { title: 'Performance & Growth', sub: 'Your Path at Fireside', icon: '📈', badge: null, isNew: true, file: 'hr-growth.pdf', pages: 10 },
+      { title: 'Welcome to Finance', sub: 'Our Culture & Values', icon: '🔥', badge: 'START HERE', isNew: false, file: 'hr-welcome.pdf', pages: 12 },
     ]
   },
+  businessdevelopment: {
+    grad: 'grad-hr',
+    icon: '👥',
+    comics: [
+      { title: 'Welcome to Business Development', sub: 'Our Culture & Values', icon: '🔥', badge: 'START HERE', isNew: false, file: 'hr-welcome.pdf', pages: 12 },
+    ]
+  },
+  operations: {
+    grad: 'grad-hr',
+    icon: '👥',
+    comics: [
+      { title: 'Welcome to Operations', sub: 'Our Culture & Values', icon: '🔥', badge: 'START HERE', isNew: false, file: 'hr-welcome.pdf', pages: 12 },
+    ]
+  },
+    
+  
 };
 
 // ── RENDER CARDS ──────────────────────────────────────────────────────────
